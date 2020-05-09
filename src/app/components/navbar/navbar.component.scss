@@ -1,0 +1,22 @@
+@import '../../app.component.scss';
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+nav{
+    width: 100vw;
+    @include dfjcsbaic();
+    background-color: $primaryBlue;
+    color: white;
+}
+
+ul{
+    @include dfjcsaaic();
+    list-style: none;
+
+    li{
+        padding: 10px;
+    }
+}

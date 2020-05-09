@@ -1,0 +1,27 @@
+
+
+$primaryBlue: #007DFE;
+$primaryWhite: #FFFFFF;
+
+@font-face{
+    font-family: 'Roboto-Black';
+    src: url('/assets/fonts/open-sans-v17-latin/open-sans-v17-latin-regular.ttf') format('truetype'),
+}
+
+@mixin dfjccaic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin dfjcsaaic{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin dfjcsbaic {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
