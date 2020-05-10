@@ -1,0 +1,21 @@
+@import '../../app.component.scss';
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#main-cont{
+    @include dfjccaic();
+}
+#tab{
+    width: 98vw;
+    margin: 10px;
+}
+
+
+.course-tab{
+    background-color: $primaryBlue;
+    padding: 10px;
+    
+    @include dfjccaifsfw();
+}

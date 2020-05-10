@@ -55,6 +55,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeSliderComponent } from './components/home-slider/home-slider.component';
 import { SlideComponent } from './components/slide/slide.component';
 import { HomeComponent } from './components/home/home.component';
+import { CoursePreviewComponent } from './components/course-preview/course-preview.component';
+import { CourseCardComponent } from './components/course-card/course-card.component';
 
 
 const MaterialModules = [
@@ -115,6 +117,8 @@ const FirebaseModules = [
     HomeSliderComponent,
     SlideComponent,
     HomeComponent,
+    CoursePreviewComponent,
+    CourseCardComponent,
     
   ],
   imports: [

@@ -22,3 +22,24 @@ $primaryWhite: #FFFFFF;
     justify-content: space-between;
     align-items: center;
 }
+
+@mixin dfjccaicfw {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@mixin dfjcfsaicfw {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@mixin dfjccaifsfw{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}

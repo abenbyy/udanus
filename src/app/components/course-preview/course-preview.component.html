@@ -1,0 +1,25 @@
+<div id="main-cont">
+    <mat-tab-group id="tab">
+        <mat-tab  label="Web Design">
+            <div class="course-tab">
+                
+                <div *ngFor="let c of courses">
+                    <app-course-card courseId={{c.payload.doc.id}}></app-course-card>
+                </div>
+                
+            </div>
+        </mat-tab>
+        <mat-tab label="Mobile Programming">
+
+        </mat-tab>
+        <mat-tab label="Desktop Applications">
+
+        </mat-tab>
+        <mat-tab label="Game Development">
+
+        </mat-tab>
+        <mat-tab label="Computer Network & Security">
+
+        </mat-tab>
+    </mat-tab-group>
+</div>
