@@ -1,12 +1,45 @@
+@import '../../app.component.scss';
 *{
     margin: 0;
     padding: 0;
 }
 
+#main-card{
+    margin: 10px;
+    width: 80vw;
+    height: 30vw;
+    @include dfjcsaaic();
+    padding: 30px 20px;
+    box-shadow: 1px 1px 3px #888888;
+    min-width: 450px;
+    min-height: 300px;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+.content-left{
+    width: calc(300px + 0.2em);
+}
 .paddinged{
     padding: 10px;
 }
+p{
+    color: #888888;
+    font-size: 15px;
+}
+
+button{
+    background-color: $primaryBlue;
+    color: white;
+    margin: 10px;
+}
 
 #title{
-    font-size: 36px;
+    font-size: 28px;
+    color: $darkBlue;
+}
+
+img{
+    width: 100%/2;
+    height: 100%;
 }

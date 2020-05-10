@@ -1,12 +1,9 @@
 
 
 $primaryBlue: #007DFE;
+$darkBlue: #355a98;
 $primaryWhite: #FFFFFF;
 
-@font-face{
-    font-family: 'Roboto-Black';
-    src: url('/assets/fonts/open-sans-v17-latin/open-sans-v17-latin-regular.ttf') format('truetype'),
-}
 
 @mixin dfjccaic{
     display: flex;

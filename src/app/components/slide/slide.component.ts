@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-slide',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SlideComponent implements OnInit {
 
-  constructor() { }
+  @Input() title: string;
+  @Input() description: string;
+  @Input() imageURL: string;
+  @Input() category: string
+
+  constructor(
+    private router: Router,
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  navigateLink():void{
+    this.router.navigate([this.category])
   }
 
 }

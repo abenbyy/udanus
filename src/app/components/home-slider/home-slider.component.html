@@ -1,1 +1,13 @@
-<p>home-slider works!</p>
+<div id="main-cont">
+    <div id="slide-cont">
+        <mat-icon (click)="slideLeft()" class="white-text">keyboard_arrow_left</mat-icon>
+        <app-slide class="slide fade" *ngFor="let slide of slides" title={{slide.title}} description={{slide.description}} imageURL={{slide.imageURL}} category={{slide.link}}></app-slide>
+        <mat-icon (click)="slideRight()" class="white-text">keyboard_arrow_right</mat-icon>
+    </div>
+    <div id="dot-cont">
+        <span (click)="showSlide(0)" class="dot active"></span>
+        <span (click)="showSlide(1)" class="dot active"></span>
+        <span (click)="showSlide(2)" class="dot active"></span>
+        <span (click)="showSlide(3)" class="dot active"></span>
+    </div>
+</div>

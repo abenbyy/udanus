@@ -1,14 +1,12 @@
-<div>
-    <div>
+<div id="main-card">
+    <div class="content-left">
         <div>
-            <div class="paddinged"><strong id="title">Title</strong></div>
-            <div class="paddinged">Content</div>
+            <div class="paddinged"><strong id="title">{{title}}</strong></div>
+            <p class="paddinged">{{description}}</p>
         </div>
         <div>
-            <button mat-button>Basic</button>
+            <button (click)="navigateLink()" mat-button>Learn Now</button>
         </div>
     </div>
-    <div>
-        <img src="../../../assets/illustrations/computer-science.jpg" alt="">
-    </div>
+    <img src={{imageURL}} alt="">
 </div>

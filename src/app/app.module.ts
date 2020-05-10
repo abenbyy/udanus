@@ -54,6 +54,7 @@ import {MatTreeModule} from '@angular/material/tree';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeSliderComponent } from './components/home-slider/home-slider.component';
 import { SlideComponent } from './components/slide/slide.component';
+import { HomeComponent } from './components/home/home.component';
 
 
 const MaterialModules = [
@@ -113,6 +114,7 @@ const FirebaseModules = [
     NavbarComponent,
     HomeSliderComponent,
     SlideComponent,
+    HomeComponent,
     
   ],
   imports: [
