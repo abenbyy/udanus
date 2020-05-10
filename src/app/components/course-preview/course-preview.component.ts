@@ -12,12 +12,31 @@ export class CoursePreviewComponent implements OnInit {
     public db: FirebaseService
   ) { }
 
-  courses=[]
+  webcourses=[]
+  mobilecourses=[]
+  desktopcourses = []
+  gamecourses = []
+  networkcourses = []
 
   ngOnInit(): void {
     this.db.getCourses("web",3).subscribe(result =>{
-      this.courses = result;
-      console.log(this.courses[0].payload.doc.id)
+      this.webcourses = result;
+    })
+
+    this.db.getCourses("mobile",3).subscribe(result =>{
+      this.mobilecourses = result;
+    })
+
+    this.db.getCourses("desktop",3).subscribe(result =>{
+      this.desktopcourses = result;
+    })
+
+    this.db.getCourses("game",3).subscribe(result =>{
+      this.gamecourses = result;
+    })
+
+    this.db.getCourses("network",3).subscribe(result =>{
+      this.networkcourses = result;
     })
   }
 

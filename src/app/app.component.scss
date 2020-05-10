@@ -23,6 +23,12 @@ $primaryWhite: #FFFFFF;
     align-items: center;
 }
 
+@mixin dfjcfsaic {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 @mixin dfjccaicfw {
     display: flex;
     justify-content: center;
