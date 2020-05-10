@@ -8,13 +8,13 @@
     @include dfjccaic();
 }
 #tab{
-    width: 98vw;
-    margin: 10px;
+    width: 100vw;
+    
 }
 
 
 .course-tab{
-    background-color: $primaryBlue;
+    background-image: linear-gradient(to right top, #169dfc, #0091ff, #0083ff, #0074ff, #2863ff, #3a5aff, #4b50fe, #5a44fc, #5d43fc, #5f42fc, #6241fc, #6440fc);
     padding: 10px;
     
     @include dfjccaifsfw();
