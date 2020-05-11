@@ -42,4 +42,8 @@ export class FirebaseService {
       'email': email,
     })
   }
+
+  getModules(courseId: string){
+    return this.db.collection("courses").doc(courseId).collection("modules").snapshotChanges()
+  }
 }

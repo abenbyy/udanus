@@ -1,1 +1,15 @@
-<p>learn works!</p>
+<app-navbar></app-navbar>
+<div id="main-cont">
+    <aside id="modules-cont">
+        <mat-card class="module activated" *ngFor="let m of modules; let i = index" (click)="showModule(i)">
+            {{m.payload.doc.data().title}}
+        </mat-card>
+    </aside>
+    <div class="content-cont" *ngFor="let m of modules; let i = index">
+        <div><strong>{{m.payload.doc.data().title}}</strong></div>
+        <div>
+            {{m.payload.doc.data().content}}
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

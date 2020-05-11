@@ -6,7 +6,7 @@
 }
 
 nav{
-    width: 98.67vw;
+    width: 100vw;
     @include dfjcsbaic();
     background-color: $primaryBlue;
     color: white;
@@ -18,7 +18,7 @@ ul{
     list-style: none;
 
     li{
-        padding: 10px;
+        padding: 5px 10px;
     }
 }
 
