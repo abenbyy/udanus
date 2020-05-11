@@ -15,6 +15,10 @@ export class FirebaseService {
     return this.db.collection("courses", ref=> ref.where("category","==",category).limit(limit)).snapshotChanges()
   }
 
+  getAllCourses(limit: number){
+    return this.db.collection("courses", ref=> ref.limit(limit)).snapshotChanges()
+  }
+
   getCourseById(id: string){
     return this.db.collection("courses").doc(id).snapshotChanges()
   }

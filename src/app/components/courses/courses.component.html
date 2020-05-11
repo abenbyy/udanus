@@ -1,0 +1,11 @@
+<app-navbar></app-navbar>
+<div id="main-cont">
+    <div id="nores-card" *ngIf="noResult" >
+        <img id="nores-img" src="../../../assets/illustrations/empty.jpg" alt="">
+        <span><strong>SORRY!</strong> your search returned no results :(</span>
+    </div>
+    <div *ngFor="let c of courses">
+        <app-course-card courseId={{c.payload.doc.id}}></app-course-card>
+    </div>
+</div>
+<app-footer></app-footer>

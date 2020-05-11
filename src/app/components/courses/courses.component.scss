@@ -1,0 +1,20 @@
+@import '../../app.component.scss';
+
+#main-cont{
+    @include dfjccaifsfw();
+    @include gradientbg();
+}
+
+#nores-card{
+    @include dfjccaic();
+    background-color: white;
+    font-size: 15px;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+#nores-img{
+    height: 400px;
+    width: 400px;
+}

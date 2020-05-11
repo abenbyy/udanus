@@ -63,6 +63,8 @@ import { RegisterComponent } from './components/register/register.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LoginFormComponent } from './components/login-form/login-form.component';
 import { RegisterFormComponent } from './components/register-form/register-form.component';
+import { CoursesComponent } from './components/courses/courses.component';
+import { LearnComponent } from './components/learn/learn.component';
 
 
 const MaterialModules = [
@@ -130,6 +132,8 @@ const FirebaseModules = [
     RegisterComponent,
     RegisterFormComponent,
     LoginFormComponent,
+    CoursesComponent,
+    LearnComponent,
     
   ],
   imports: [
