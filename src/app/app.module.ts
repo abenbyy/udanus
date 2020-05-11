@@ -58,6 +58,10 @@ import { HomeComponent } from './components/home/home.component';
 import { CoursePreviewComponent } from './components/course-preview/course-preview.component';
 import { CourseCardComponent } from './components/course-card/course-card.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterFormComponent } from './components/register/register.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { LoginFormComponent } from './components/login-form/login-form.component';
 
 
 const MaterialModules = [
@@ -121,6 +125,9 @@ const FirebaseModules = [
     CoursePreviewComponent,
     CourseCardComponent,
     FooterComponent,
+    LoginComponent,
+    RegisterFormComponent,
+    LoginFormComponent,
     
   ],
   imports: [
@@ -129,6 +136,7 @@ const FirebaseModules = [
     FirebaseModules,
     MaterialModules,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
   ],
   exports: [
     MaterialModules,
