@@ -12,6 +12,7 @@ export class LearnComponent implements OnInit {
   modules = []
   mcard = []
   mcontent = []
+  mparagraph = []
   mcount = 0;
   constructor(
     public db: FirebaseService,
@@ -29,13 +30,15 @@ export class LearnComponent implements OnInit {
         var doneRender = setInterval(function(){
           var temp = document.querySelectorAll('.content-cont')
           var temp2 = document.querySelectorAll('.module')
-          console.log("1: "+temp.length)
-          console.log("2: "+ temp2.length)
-          if(temp.length> 0 && temp2.length>0){
+          var temp3 = document.querySelectorAll('.content')
+          
+          if(temp.length> 0 && temp2.length>0 && temp3.length>0){
             for(let i =0;i<temp.length;i++){
               this.mcontent.push(temp[i] as HTMLElement)
               this.mcard.push(temp2[i] as HTMLElement)
+              this.mparagraph.push(temp3[i] as HTMLElement)
             }
+            this.insertContent()
             this.showModule(0)
             clearInterval(doneRender)
           }
@@ -49,6 +52,11 @@ export class LearnComponent implements OnInit {
 
   }
 
+  insertContent(){
+    for(let i=0;i<this.mparagraph.length;i++){
+      this.mparagraph[i].innerHTML = this.modules[i].payload.doc.data().content
+    }
+  }
   clearModules(){
     for(let i=0;i<this.modules.length;i++){
       this.mcontent[i].style.display = "none"

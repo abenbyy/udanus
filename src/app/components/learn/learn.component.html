@@ -7,7 +7,7 @@
     </aside>
     <div class="content-cont" *ngFor="let m of modules; let i = index">
         <div><strong>{{m.payload.doc.data().title}}</strong></div>
-        <div>
+        <div class="content">
             {{m.payload.doc.data().content}}
         </div>
     </div>

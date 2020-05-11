@@ -44,6 +44,6 @@ export class FirebaseService {
   }
 
   getModules(courseId: string){
-    return this.db.collection("courses").doc(courseId).collection("modules").snapshotChanges()
+    return this.db.collection("courses").doc(courseId).collection("modules",ref=>ref.orderBy("number")).snapshotChanges()
   }
 }
