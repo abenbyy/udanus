@@ -9,11 +9,11 @@ import { Slide } from 'src/app/models/slide';
 export class HomeSliderComponent implements OnInit {
 
   slides: Slide[] =[
-    new Slide("Web Design","Create a fantastic web design, from basics to advaced, take a look at these courses that can help you improve your skills on mastering the web and create a fantastic website","./slide","../../../assets/illustrations/web.jpg"),
-    new Slide("Mobile Programming","Go fully creative and develop your skill on creating mobile applications, be it android or IOS, we have them all!","./slide","../../../assets/illustrations/mobile.jpg"),
-    new Slide("Desktop Application","Wan't to start being a Software Engineer? Look no further, we cover all from Java, C#, and Python applications","./slide","../../../assets/illustrations/desktop.jpg"),
-    new Slide("Game Development","Tired of playing other games? Create your own! Try some of our courses to make you the ultimate game developer","./slide","../../../assets/illustrations/game.jpg"),
-    new Slide("Computer Network & Security","Ever considered being a 'hacker'? Well here some courses to start your knowledge on networks and security","./slide","../../../assets/illustrations/network.jpg"),
+    new Slide("Web Design","Create a fantastic web design, from basics to advaced, take a look at these courses that can help you improve your skills on mastering the web and create a fantastic website","web","../../../assets/illustrations/web.jpg"),
+    new Slide("Mobile Programming","Go fully creative and develop your skill on creating mobile applications, be it android or IOS, we have them all!","mobile","../../../assets/illustrations/mobile.jpg"),
+    new Slide("Desktop Application","Wan't to start being a Software Engineer? Look no further, we cover all from Java, C#, and Python applications","desktop","../../../assets/illustrations/desktop.jpg"),
+    new Slide("Game Development","Tired of playing other games? Create your own! Try some of our courses to make you the ultimate game developer","game","../../../assets/illustrations/game.jpg"),
+    new Slide("Computer Network & Security","Ever considered being a 'hacker'? Well here some courses to start your knowledge on networks and security","network","../../../assets/illustrations/network.jpg"),
   ];
 
   slideobj: HTMLElement[]

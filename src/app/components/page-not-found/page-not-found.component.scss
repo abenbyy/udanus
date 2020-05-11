@@ -1,0 +1,26 @@
+@import '../../app.component.scss';
+
+#main-cont{
+    width: 100vw;
+    padding: 10px 0;
+
+    
+    @include gradientbg();
+    @include dfjccaic();
+    div{
+        @include dfjccaic();
+        flex-direction: column;
+        background-color: white;
+        width: fit-content;
+        img{
+            margin: 10px 0;
+            height: 400px;
+            width: 400px;
+        }
+        span{
+            margin-top: 10px;
+            font-size: 15px;
+        }
+    }
+    
+}

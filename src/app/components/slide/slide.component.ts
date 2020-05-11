@@ -21,7 +21,7 @@ export class SlideComponent implements OnInit {
   }
 
   navigateLink():void{
-    this.router.navigate([this.category])
+    this.router.navigate(["./courses",this.category])
   }
 
 }

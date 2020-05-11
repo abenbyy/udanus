@@ -1,5 +1,5 @@
 <div id="main-cont">
-    <mat-tab-group id="tab">
+    <mat-tab-group mat-stretch-tabs id="tab">
         <mat-tab  label="Web Design">
             <div class="course-tab">
                 <div *ngFor="let c of webcourses">
@@ -8,23 +8,31 @@
             </div>
         </mat-tab>
         <mat-tab label="Mobile Programming">
-            <div *ngFor="let c of mobilecourses">
-                <app-course-card courseId={{c.payload.doc.id}}></app-course-card>
+            <div class="course-tab">
+                <div *ngFor="let c of mobilecourses">
+                    <app-course-card courseId={{c.payload.doc.id}}></app-course-card>
+                </div>
             </div>
         </mat-tab>
         <mat-tab label="Desktop Applications">
-            <div *ngFor="let c of desktopcourses">
-                <app-course-card courseId={{c.payload.doc.id}}></app-course-card>
+            <div class="course-tab">
+                <div *ngFor="let c of desktopcourses">
+                    <app-course-card courseId={{c.payload.doc.id}}></app-course-card>
+                </div>
             </div>
         </mat-tab>
         <mat-tab label="Game Development">
-            <div *ngFor="let c of gamecourses">
-                <app-course-card courseId={{c.payload.doc.id}}></app-course-card>
+            <div class="course-tab">
+                <div *ngFor="let c of gamecourses">
+                    <app-course-card courseId={{c.payload.doc.id}}></app-course-card>
+                </div>
             </div>
         </mat-tab>
         <mat-tab label="Computer Network & Security">
-            <div *ngFor="let c of networkcourses">
-                <app-course-card courseId={{c.payload.doc.id}}></app-course-card>
+            <div class="course-tab">
+                <div *ngFor="let c of networkcourses">
+                    <app-course-card courseId={{c.payload.doc.id}}></app-course-card>
+                </div>
             </div>
         </mat-tab>
     </mat-tab-group>

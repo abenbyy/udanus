@@ -1,9 +1,16 @@
 .course-card{
-    max-width: 220px;
+    max-width: 200px;
     height: fit-content;
     max-height: 505px;
     
     margin: 10px;
+    img{
+        
+        max-height: 250px;
+    }
+    mat-card-content{
+        padding: 10px;
+    }
 }
 
 p{

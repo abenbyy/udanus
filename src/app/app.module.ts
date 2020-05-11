@@ -65,6 +65,7 @@ import { LoginFormComponent } from './components/login-form/login-form.component
 import { RegisterFormComponent } from './components/register-form/register-form.component';
 import { CoursesComponent } from './components/courses/courses.component';
 import { LearnComponent } from './components/learn/learn.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 
 const MaterialModules = [
@@ -134,6 +135,7 @@ const FirebaseModules = [
     LoginFormComponent,
     CoursesComponent,
     LearnComponent,
+    PageNotFoundComponent,
     
   ],
   imports: [
