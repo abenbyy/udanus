@@ -27,6 +27,6 @@
 
     <mat-spinner *ngIf="isLoading" [diameter]="50"></mat-spinner>
     <div *ngIf="isUserAvailable === false" class="error-message">Incorrect Email or Password</div>
-
     <button mat-button id="submit-button" (click)="doLogin()">Login</button>
+    <div class="margin-top">Don't have an account? Register <a routerLink="/register">here</a></div>
 </div>

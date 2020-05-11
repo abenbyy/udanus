@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroupDirective, NgForm, Validators } from '@angular/forms';
 import { ErrorStateMatcher } from '@angular/material/core';
 import { FirebaseService } from 'src/app/services/firebase.service';
+import { Router } from '@angular/router';
 
 export class CustomErrorStateMatcher implements ErrorStateMatcher {
   isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
@@ -37,6 +38,7 @@ export class RegisterFormComponent implements OnInit {
 
   constructor(
     public db: FirebaseService,
+    private router: Router,
   ) { }
 
   ngOnInit(): void {
@@ -69,6 +71,7 @@ export class RegisterFormComponent implements OnInit {
     this.db.registerUser(email, username, password).then(()=>{
       alert("Register Success")
       this.isLoading = false
+      this.router.navigate(['./'])
     })
   }
 
