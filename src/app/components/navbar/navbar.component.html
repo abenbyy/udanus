@@ -4,8 +4,12 @@
         <li routerLink="/">Home</li>
         <li routerLink="/courses/all">Courses</li>
     </ul>
-    <ul>
+    <ul *ngIf="!isLoggedIn">
         <li routerLink="/login">Login</li>
         <li routerLink="/register">Register</li>
+    </ul>
+    <ul *ngIf="isLoggedIn">
+        <li>Logged in as: {{currUser}}</li>
+        <li><button (click)="logout()" mat-button>Logout</button></li>
     </ul>
 </nav>

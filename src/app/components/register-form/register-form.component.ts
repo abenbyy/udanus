@@ -71,6 +71,7 @@ export class RegisterFormComponent implements OnInit {
     this.db.registerUser(email, username, password).then(()=>{
       alert("Register Success")
       this.isLoading = false
+      localStorage.setItem("username", username)
       this.router.navigate(['./'])
     })
   }

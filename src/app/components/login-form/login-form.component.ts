@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ErrorStateMatcher } from '@angular/material/core';
 import { FormControl, FormGroupDirective, NgForm, Validators } from '@angular/forms';
 import { FirebaseService } from 'src/app/services/firebase.service';
+import { Router } from '@angular/router';
 
 
 export class CustomErrorStateMatcher implements ErrorStateMatcher {
@@ -35,7 +36,8 @@ export class LoginFormComponent implements OnInit {
   matcher = new CustomErrorStateMatcher()
 
   constructor(
-    public db: FirebaseService
+    public db: FirebaseService,
+    private router: Router,
   ) { }
 
   ngOnInit(): void {
@@ -52,11 +54,12 @@ export class LoginFormComponent implements OnInit {
       this.isLoading = false
       if(res.length > 0){
         this.userDoc = res[0].payload.doc.data()
+        localStorage.setItem("username", this.userDoc.username)
         this.isUserAvailable = res[0].payload.doc.exists
-        console.log(res[0].payload.doc.id)
+        this.router.navigate(["./"])
       }else{
         this.isUserAvailable = false
-        console.log("user not found")
+        
       }
     })
   }
