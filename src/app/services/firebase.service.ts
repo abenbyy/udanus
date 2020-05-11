@@ -20,8 +20,22 @@ export class FirebaseService {
   }
 
   getUserByLogin(email: string, password: string){
-    console.log(email)
-    console.log(password)
     return this.db.collection("users", ref=> ref.where("email", "==", email).where("password","==",password)).snapshotChanges()
+  }
+
+  getUserByUsername(username: string){
+    return this.db.collection("users", ref=> ref.where("username","==",username)).snapshotChanges()
+  }
+
+  getUserByEmail(email: string){
+    return this.db.collection("users", ref=> ref.where("email","==",email)).snapshotChanges()
+  }
+
+  registerUser(username: string, email: string, password: string){
+    return this.db.collection("users").add({
+      'username': username,
+      'password': password,
+      'email': email,
+    })
   }
 }
