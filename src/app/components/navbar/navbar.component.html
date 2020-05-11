@@ -4,12 +4,19 @@
         <li routerLink="/">Home</li>
         <li routerLink="/courses/all">Courses</li>
     </ul>
-    <ul *ngIf="!isLoggedIn">
-        <li routerLink="/login">Login</li>
-        <li routerLink="/register">Register</li>
-    </ul>
-    <ul *ngIf="isLoggedIn">
-        <li>Logged in as: {{currUser}}</li>
-        <li><button (click)="logout()" mat-button>Logout</button></li>
-    </ul>
+    <div id="right-cont">
+        <ul *ngIf="!isLoggedIn">
+            <li routerLink="/login">Login</li>
+            <li routerLink="/register">Register</li>
+        </ul>
+        <ul *ngIf="isLoggedIn">
+            <li>Logged in as: {{currUser}}</li>
+            <li><button (click)="logout()" mat-button>Logout</button></li>
+        </ul>
+        <div id="social-link">
+            <a href="https://www.instagram.com/udanus.course/"><div id="ig"></div></a>
+            <a href="https://web.facebook.com/udanus.course"><div id="fb"></div></a>
+            <a href="https://twitter.com/Udanus1"><div id="tw"></div></a>
+        </div>
+    </div>
 </nav>

@@ -7,10 +7,63 @@
 
 nav{
     width: 100vw;
-    @include dfjcsbaic();
-    background-color: $primaryBlue;
+    @include dfjcsaaic();
+    background-color: $compBlack;
     color: white;
     
+}
+#right-cont{
+    @include dfjccaic()
+}
+
+#social-link{
+    border: solid;
+    border-color: white;
+    border-width: 0 0 0 1px;
+    padding-left: 10px; 
+    @include dfjcsaaic();
+    a{
+        margin: 0 3px;
+    }
+    
+}
+
+#ig{
+    background-image: url('../../../assets/icons/instagram_black.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    
+}
+#ig:hover{
+    background-image: url('../../../assets/icons/instagram.png');
+    transition: 0.75s;
+}
+#fb{
+    background-image: url('../../../assets/icons/facebook_black.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    align-self: flex-start;
+    
+}
+#fb:hover{
+    background-image: url('../../../assets/icons/facebook.png');
+    transition: 0.75s;
+}
+#tw{
+    background-image: url('../../../assets/icons/twitter_black.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    
+}
+#tw:hover{
+    background-image: url('../../../assets/icons/twitter.png');
+    transition: 0.75s;
 }
 
 ul{

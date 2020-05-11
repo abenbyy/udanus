@@ -24,7 +24,7 @@ export class HomeSliderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    window.onload = function(){
+    var doneRender = setInterval(function(){
       this.slideobj = []
       this.dots = []
       let sd = document.querySelectorAll(".slide")
@@ -38,10 +38,15 @@ export class HomeSliderComponent implements OnInit {
 
       this.clearSlide()
       this.showSlide(this.currIdx)
-
+      if(sd.length>0&&d.length>0){
+        clearInterval(doneRender)
+        setInterval(function(){
+          this.slideRight()
+        }.bind(this), 5000)
+      }
 
       
-    }.bind(this)
+    }.bind(this), 100)
   }
 
   clearSlide(){
