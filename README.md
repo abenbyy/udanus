@@ -2,7 +2,7 @@
 
 This project: 
 - Was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.5.
-- Is deployed on udanus.herokuapp.com
+- Is deployed on `https://udanus.herokuapp.com/`
 - Uses illustrations from `https://www.freepik.com/stories`
 - Uses Google Firebase as our Database
 
