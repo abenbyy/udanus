@@ -1,6 +1,10 @@
 # Udanus
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.5.
+This project: 
+- Was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.5.
+- Is deployed on `https://udanus.herokuapp.com/`
+- Uses illustrations from `https://www.freepik.com/stories`
+- Uses Google Firebase as our Database
 
 ## Development server
 
@@ -12,7 +16,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build. To run the deployed project you can use the server that has been made by running `node server.js` and navigate to `http://localhost:8080`
 
 ## Running unit tests
 
